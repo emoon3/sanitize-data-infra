@@ -23,5 +23,5 @@ resource "aws_iam_role_policy_attachment" "lambda" {
 
 resource "aws_iam_role_policy_attachment" "s3" {
   role       = aws_iam_role.role.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
+  policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
 }
